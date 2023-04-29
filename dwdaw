@@ -1,0 +1,196 @@
+    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mix2552z/UI-MIXKYXDZ/main/UI%20MIXKYXDZ", true))()
+    library:CreateWatermark(" ชื่อ ") -- Config แตกนะเดียวค่อยแก้รอเน็ตมาก่อน By MeowX#0001
+    local CenterHubNo1 = library:CreateWindow(" ขื่อ ",Enum.KeyCode.E)
+    local Tab = CenterHubNo1:CreateTab("Main")
+    local Sector1 = Tab:CreateSector("Buy Dynamite","left")
+    Sector1:AddLabel("Buy Dynamite")
+    Sector1:AddButton("Health Potion",function()
+local args = {
+    [1] = "Health Potion",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+
+    end)
+     Sector1:AddButton("Dynamite",function()
+local args = {
+    [1] = "Dynamite",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+
+    end)
+     Sector1:AddButton("BIG Dynamite",function()
+local args = {
+    [1] = "BIG Dynamite",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+
+    end)
+     
+      local Sector1 = Tab:CreateSector("Buy Ammo","left")
+    Sector1:AddLabel("Buy Ammo")
+    Sector1:AddButton("Pistol Ammo",function()
+local args = {
+    [1] = "PistolAmmo",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+
+    end)
+     Sector1:AddButton("Rifle Ammo",function()
+local args = {
+    [1] = "RifleAmmo",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+
+    end)
+     Sector1:AddButton("Arrows",function()
+     local args = {
+    [1] = "Arrows",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+
+     
+    end)
+     Sector1:AddButton("Shotgun Ammo",function()
+     local args = {
+    [1] = "ShotgunAmmo",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+
+    end)
+     Sector1:AddButton("Sniper Ammo",function()
+     local args = {
+    [1] = "SniperAmmo",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+    end)
+    
+    
+    
+    
+    
+      local Sector1 = Tab:CreateSector("Help you","right")
+    Sector1:AddLabel("Help you")
+    Sector1:AddToggle("God Mode",false,function(t)
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+
+    end)
+    Sector1:AddToggle("Auto Break",false,function(t)
+    _G.enable = (t)
+    while _G.enable do wait()
+
+    local args = {
+    [1] = "BreakFree"
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.LassoEvents:FireServer(unpack(args))
+    end
+    end)
+     Sector1:AddButton("Cowboy",function()
+    
+local args = {
+    [1] = "PayOffBounty"
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.BuyItem:InvokeServer(unpack(args))
+end)
+
+
+
+
+ local Sector1 = Tab:CreateSector("Player","right")
+    Sector1:AddLabel("Player")
+    Sector1:AddButton("คุก",function()
+    local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-455.502991, 13.5495892, -73.0939865, 0.189608708, -6.2370745e-08, 0.981859744, -5.92824172e-08, 1, 7.49712044e-08, -0.981859744, -7.24222105e-08, 0.189608708)}):Play()
+    end)
+    Sector1:AddButton("พาไปขัง",function()
+     local TweenService = game:GetService("TweenService")
+local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+{CFrame = CFrame.new(-258.862427, 13.3500042, -154.754913, 0.98586756, -2.2877316e-08, 0.167526484, 2.51832031e-08, 1, -1.16398748e-08, -0.167526484, 1.56942281e-08, 0.98586756)}):Play()
+    wait(5)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-261.618225, 13.3500042, -133.060349, 0.918700695, -4.54836915e-08, -0.394954532, 5.29005924e-08, 1, 7.8898168e-09, 0.394954532, -2.81417094e-08, 0.918700695)
+    
+    end)
+    
+    
+    
+    local Sector1 = Tab:CreateSector("Auto Farm","right")
+    Sector1:AddLabel("Auto Farm")
+    Sector1:AddButton("Auto Farm",function(t)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Mix2552z/remod/main/remod"))();
+    end)
+  Sector1:AddToggle("God Mode",false,function(t)
+  _G.enable = t
+while _G.enable do wait()
+local args = {
+    [1] = "Shopping",
+    [2] = t
+}
+
+game:GetService("ReplicatedStorage").GeneralEvents.CustomizeCharacter:InvokeServer(unpack(args))
+end
+end)
